@@ -1,4 +1,5 @@
 site_name: vinsmoke-three
+site_url: https://vinsmoke-three.com
 theme:
   name: material
   language: ja
