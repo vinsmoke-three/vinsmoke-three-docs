@@ -1,5 +1,4 @@
 site_name: vinsmoke-three
-site_url: https://vinsmoke-three.com
 theme:
   name: material
   language: ja
@@ -76,6 +75,6 @@ extra:
   
 # Page tree
 nav:
-  # - Home: index.md
+  - Home: index.md
   - PyTorch:
     - 01. PyTorch基礎: PyTorch/01_pytorch_fundamentals.md
