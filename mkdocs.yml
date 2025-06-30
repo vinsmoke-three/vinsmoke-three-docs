@@ -78,6 +78,7 @@ extra:
 nav:
   - Home: index.md
   - PyTorch:
-    - 00. PyTorch基礎: PyTorch/00_pytorch_fundamentals.md
+    - 00. PyTorch fundamentals: PyTorch/00_pytorch_fundamentals.md
     - 01. PyTorch workflow: PyTorch/01_pytorch_workflow.md
     - 02. PyTorch classification: PyTorch/02_pytorch_classification.md
+    - 03. PyTorch computer vision: PyTorch/03_pytorch_computer_vision.md

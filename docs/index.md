@@ -32,5 +32,6 @@
 
 ### 中級者向け
 1. [PyTorch classification](PyTorch/02_pytorch_classification.md) - 分類問題の実装
+2. [PyTorch computer vision](PyTorch/03_pytorch_computer_vision.md) - コンピュータビジョン入門とFashionMNIST画像分類
 
 ---
