@@ -780,9 +780,3 @@ print(tensor_back_on_cpu)
 ### 公式ドキュメント
 - [PyTorch公式テンソルドキュメント](https://docs.pytorch.org/stable/tensors.html)
 - [PyTorch基本操作ガイド](https://docs.pytorch.org/stable/torch.html)
-
-### よくあるエラーと対処法
-- **形状エラー**: `tensor.shape`で次元を確認
-- **デバイスエラー**: すべてのテンソルを同じデバイスに配置
-- **データ型エラー**: `.type()`や`.to()`で統一
-- **メモリエラー**: バッチサイズを調整または

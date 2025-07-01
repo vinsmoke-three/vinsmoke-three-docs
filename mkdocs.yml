@@ -1,5 +1,9 @@
-site_name: vinsmoke-three
+site_name: vinsmoke-three - 機械学習・深層学習ドキュメント
 site_url: https://vinsmoke-three.com
+site_description: PyTorch、機械学習、深層学習の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイト
+site_author: vinsmoke-three
+repo_url: https://github.com/vinsmoke-three/vinsmoke-three-docs
+repo_name: vinsmoke-three/vinsmoke-three-docs
 theme:
   name: material
   language: ja
@@ -48,31 +52,64 @@ theme:
           name: Switch to system preference
 
 plugins:
-  - search
+  - search:
+      lang: ja
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      type: datetime
+      timezone: Asia/Tokyo
+      locale: ja
 
 # Copyright
 copyright: Copyright &copy; 2025 - 2025 vinsmoke-three
 
 markdown_extensions:
+  - meta
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+      title: 目次
 
 # Additional configuration
 extra:
-  # status:
-  #   new: Recently added
-  #   deprecated: Deprecated
-  # analytics:
-  #   # provider: google
-  #   # property: !ENV GOOGLE_ANALYTICS_KEY
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/vinsmoke-three
+      name: GitHub
+  tags:
+    PyTorch: pytorch
+    機械学習: machine-learning
+    深層学習: deep-learning
+    カスタムデータセット: custom-datasets
+    画像分類: image-classification
+    コンピュータビジョン: computer-vision
+    データ拡張: data-augmentation
   
 # Page tree
 nav:
@@ -82,3 +119,4 @@ nav:
     - 01. PyTorch workflow: PyTorch/01_pytorch_workflow.md
     - 02. PyTorch classification: PyTorch/02_pytorch_classification.md
     - 03. PyTorch computer vision: PyTorch/03_pytorch_computer_vision.md
+    - 04. PyTorch custom datasets: PyTorch/04_pytorch_custom_datasets.md
