@@ -13,6 +13,7 @@ PyTorch、機械学習、深層学習の実践的なチュートリアルとコ�
 - **[PyTorch classification](docs/PyTorch/02_pytorch_classification.md)** - 分類問題の実装
 - **[PyTorch computer vision](docs/PyTorch/03_pytorch_computer_vision.md)** - コンピュータビジョンとFashionMNIST画像分類
 - **[PyTorch custom datasets](docs/PyTorch/04_pytorch_custom_datasets.md)** - カスタムデータセットと画像分類モデルの構築
+- **[PyTorch modular](docs/PyTorch/05_pytorch_modular.md)** - コードのモジュール化と再利用可能なMLパイプラインの構築
 
 ## 🛠️ 技術スタック
 

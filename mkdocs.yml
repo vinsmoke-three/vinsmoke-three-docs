@@ -110,13 +110,33 @@ extra:
     画像分類: image-classification
     コンピュータビジョン: computer-vision
     データ拡張: data-augmentation
+    テンソル: tensor
+    初心者向け: beginner
+    中級者向け: intermediate
+    上級者向け: advanced
+    線形回帰: linear-regression
+    ワークフロー: workflow
+    分類: classification
+    ニューラルネットワーク: neural-network
+    CNN: convolutional-neural-network
+    TinyVGG: tinyvgg
+    モジュール化: modularization
+    スクリプトモード: script-mode
+    再利用: reusability
+    MLパイプライン: ml-pipeline
+    チュートリアル: tutorial
+    実践: practical
+    Python: python
+    FashionMNIST: fashion-mnist
   
 # Page tree
 nav:
   - Home: index.md
   - PyTorch:
-    - 00. PyTorch fundamentals: PyTorch/00_pytorch_fundamentals.md
-    - 01. PyTorch workflow: PyTorch/01_pytorch_workflow.md
-    - 02. PyTorch classification: PyTorch/02_pytorch_classification.md
-    - 03. PyTorch computer vision: PyTorch/03_pytorch_computer_vision.md
-    - 04. PyTorch custom datasets: PyTorch/04_pytorch_custom_datasets.md
+    - 0. setup: PyTorch/00_setup.md
+    - 1. PyTorch fundamentals: PyTorch/01_pytorch_fundamentals.md
+    - 2. PyTorch workflow: PyTorch/02_pytorch_workflow.md
+    - 3. PyTorch classification: PyTorch/03_pytorch_classification.md
+    - 4. PyTorch computer vision: PyTorch/04_pytorch_computer_vision.md
+    - 5. PyTorch custom datasets: PyTorch/05_pytorch_custom_datasets.md
+    - 6. PyTorch modular: PyTorch/06_pytorch_modular.md
