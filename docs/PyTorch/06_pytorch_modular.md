@@ -518,11 +518,18 @@ class TinyVGG(nn.Module):
           nn.ReLU(),
           nn.MaxPool2d(2)
         )
+        # auto calculate flatten_size
+        with torch.no_grad():
+            dummy_input = torch.zeros(1, input_shape, image_size, image_size)
+            x = self.conv_block_1(dummy_input)
+            x = self.conv_block_2(x)
+            flatten_size = x.view(1, -1).shape[1]  # or flatten_size = x[0].numel()
+
         self.classifier = nn.Sequential(
           nn.Flatten(),
           # このin_features形状の由来について：
           # ネットワークの各層が入力データの形状を圧縮・変更するため
-          nn.Linear(in_features=hidden_units*13*13,
+          nn.Linear(in_features=flatten_size,
                     out_features=output_shape)
         )
     
@@ -563,7 +570,7 @@ PyTorchモデルの訓練・テスト用関数を含みます。
 from typing import Dict, List, Tuple
 
 import torch
-from tqdm.auto import tqdm
+from tqdm import tqdm
 
 def train_step(model: torch.nn.Module, 
                dataloader: torch.utils.data.DataLoader, 

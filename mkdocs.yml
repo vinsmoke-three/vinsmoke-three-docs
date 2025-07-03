@@ -80,6 +80,8 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+      use_pygments: true
+      pygments_style: github-dark
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.tabbed:
@@ -91,6 +93,9 @@ markdown_extensions:
       title: 目次
 
 # Additional configuration
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   status:
     new: Recently added
@@ -140,3 +145,4 @@ nav:
     - 4. PyTorch computer vision: PyTorch/04_pytorch_computer_vision.md
     - 5. PyTorch custom datasets: PyTorch/05_pytorch_custom_datasets.md
     - 6. PyTorch modular: PyTorch/06_pytorch_modular.md
+    - 7. PyTorch transfer learning: PyTorch/07_pytorch_transfer_learning.md

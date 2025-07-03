@@ -1,0 +1,194 @@
+/* VS Code風のコードブロックスタイル（言語指定がある場合のみ） */
+.highlight[data-lang] {
+  background-color: #1e1e1e !important;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+}
+
+[data-md-color-scheme="default"] .highlight[data-lang] {
+  background-color: #f8f8f8 !important;
+}
+
+[data-md-color-scheme="slate"] .highlight[data-lang] {
+  background-color: #1e1e1e !important;
+}
+
+/* コードブロック内のテキストスタイル（言語指定がある場合のみ） */
+.highlight[data-lang] pre {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+  color: #d4d4d4;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+[data-md-color-scheme="default"] .highlight[data-lang] pre {
+  color: #24292e;
+}
+
+/* シンタックスハイライト（言語指定がある場合のみ） */
+.highlight[data-lang] .k { color: #569cd6; font-weight: normal; } /* キーワード */
+.highlight[data-lang] .kn { color: #569cd6; } /* import */
+.highlight[data-lang] .kd { color: #569cd6; } /* class, def */
+.highlight[data-lang] .s { color: #ce9178; } /* 文字列 */
+.highlight[data-lang] .s2 { color: #ce9178; } /* 文字列 */
+.highlight[data-lang] .s1 { color: #ce9178; } /* 文字列 */
+.highlight[data-lang] .sb { color: #ce9178; } /* 文字列 */
+.highlight[data-lang] .sc { color: #ce9178; } /* 文字列 */
+.highlight[data-lang] .sd { color: #608b4e; } /* docstring */
+.highlight[data-lang] .se { color: #d7ba7d; } /* エスケープシーケンス */
+.highlight[data-lang] .sh { color: #ce9178; } /* シェル文字列 */
+.highlight[data-lang] .si { color: #569cd6; } /* 文字列フォーマット */
+.highlight[data-lang] .sx { color: #ce9178; } /* 文字列 */
+.highlight[data-lang] .sr { color: #d16969; } /* 正規表現 */
+.highlight[data-lang] .ss { color: #ce9178; } /* シンボル */
+.highlight[data-lang] .c { color: #6a9955; } /* コメント */
+.highlight[data-lang] .c1 { color: #6a9955; } /* コメント */
+.highlight[data-lang] .cm { color: #6a9955; } /* コメント */
+.highlight[data-lang] .cp { color: #6a9955; } /* コメント */
+.highlight[data-lang] .cs { color: #6a9955; } /* コメント */
+.highlight[data-lang] .n { color: #9cdcfe; } /* 変数名 */
+.highlight[data-lang] .na { color: #92c5f8; } /* 属性名 */
+.highlight[data-lang] .nb { color: #dcdcaa; } /* 組み込み関数 */
+.highlight[data-lang] .nc { color: #4ec9b0; } /* クラス名 */
+.highlight[data-lang] .nd { color: #dcdcaa; } /* デコレータ */
+.highlight[data-lang] .ne { color: #f44747; } /* 例外名 */
+.highlight[data-lang] .nf { color: #dcdcaa; } /* 関数名 */
+.highlight[data-lang] .ni { color: #f44747; } /* 
+.highlight[data-lang] .nl { color: #d4d4d4; } /* ラベル */
+.highlight[data-lang] .nn { color: #4ec9b0; } /* ネームスペース */
+.highlight[data-lang] .no { color: #569cd6; } /* 定数 */
+.highlight[data-lang] .nt { color: #569cd6; } /* タグ名 */
+.highlight[data-lang] .nv { color: #9cdcfe; } /* 変数 */
+.highlight[data-lang] .nx { color: #9cdcfe; } /* 変数 */
+.highlight[data-lang] .py { color: #9cdcfe; } /* プロパティ */
+.highlight[data-lang] .vc { color: #9cdcfe; } /* クラス変数 */
+.highlight[data-lang] .vg { color: #9cdcfe; } /* グローバル変数 */
+.highlight[data-lang] .vi { color: #9cdcfe; } /* インスタンス変数 */
+.highlight[data-lang] .o { color: #d4d4d4; } /* 演算子 */
+.highlight[data-lang] .ow { color: #569cd6; } /* 演算子 */
+.highlight[data-lang] .m { color: #b5cea8; } /* 数値 */
+.highlight[data-lang] .mb { color: #b5cea8; } /* 数値 */
+.highlight[data-lang] .mf { color: #b5cea8; } /* 数値 */
+.highlight[data-lang] .mh { color: #b5cea8; } /* 数値 */
+.highlight[data-lang] .mi { color: #b5cea8; } /* 数値 */
+.highlight[data-lang] .mo { color: #b5cea8; } /* 数値 */
+.highlight[data-lang] .il { color: #b5cea8; } /* 数値 */
+.highlight[data-lang] .bp { color: #dcdcaa; } /* 組み込み疑似変数 */
+.highlight[data-lang] .fm { color: #dcdcaa; } /* 関数 */
+.highlight[data-lang] .vm { color: #9cdcfe; } /* 変数 */
+
+/* ライトモード用の調整（言語指定がある場合のみ） */
+[data-md-color-scheme="default"] .highlight[data-lang] .k { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .kn { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .kd { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .s { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .s2 { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .s1 { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .sb { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .sc { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .sd { color: #008000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .se { color: #ff8000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .sh { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .si { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .sx { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .sr { color: #8b0000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .ss { color: #a31515; }
+[data-md-color-scheme="default"] .highlight[data-lang] .c { color: #008000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .c1 { color: #008000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .cm { color: #008000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .cp { color: #008000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .cs { color: #008000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .n { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .na { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nb { color: #795e26; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nc { color: #267f99; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nd { color: #795e26; }
+[data-md-color-scheme="default"] .highlight[data-lang] .ne { color: #cd3131; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nf { color: #795e26; }
+[data-md-color-scheme="default"] .highlight[data-lang] .ni { color: #cd3131; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nl { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nn { color: #267f99; }
+[data-md-color-scheme="default"] .highlight[data-lang] .no { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nt { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nv { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .nx { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .py { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .vc { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .vg { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .vi { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .o { color: #000000; }
+[data-md-color-scheme="default"] .highlight[data-lang] .ow { color: #0000ff; }
+[data-md-color-scheme="default"] .highlight[data-lang] .m { color: #098658; }
+[data-md-color-scheme="default"] .highlight[data-lang] .mb { color: #098658; }
+[data-md-color-scheme="default"] .highlight[data-lang] .mf { color: #098658; }
+[data-md-color-scheme="default"] .highlight[data-lang] .mh { color: #098658; }
+[data-md-color-scheme="default"] .highlight[data-lang] .mi { color: #098658; }
+[data-md-color-scheme="default"] .highlight[data-lang] .mo { color: #098658; }
+[data-md-color-scheme="default"] .highlight[data-lang] .il { color: #098658; }
+[data-md-color-scheme="default"] .highlight[data-lang] .bp { color: #795e26; }
+[data-md-color-scheme="default"] .highlight[data-lang] .fm { color: #795e26; }
+[data-md-color-scheme="default"] .highlight[data-lang] .vm { color: #000000; }
+
+/* 行番号のスタイル（言語指定がある場合のみ） */
+.highlight[data-lang] .linenos {
+  color: #858585;
+  background-color: transparent;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+  border-right: 1px solid #3e3e3e;
+  user-select: none;
+}
+
+[data-md-color-scheme="default"] .highlight[data-lang] .linenos {
+  color: #237893;
+  border-right: 1px solid #e1e4e8;
+}
+
+/* コードブロックのスクロールバー（言語指定がある場合のみ） */
+.highlight[data-lang]::-webkit-scrollbar {
+  height: 8px;
+}
+
+.highlight[data-lang]::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+
+.highlight[data-lang]::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+}
+
+.highlight[data-lang]::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+[data-md-color-scheme="default"] .highlight[data-lang]::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}
+
+[data-md-color-scheme="default"] .highlight[data-lang]::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+
+[data-md-color-scheme="default"] .highlight[data-lang]::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* インラインコードのスタイル */
+code {
+  background-color: #f1f3f4 !important;
+  color: #2d2d2d !important;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+[data-md-color-scheme="slate"] code {
+  background-color: #2d2d2d !important;
+  color: #999999 !important;
+}
