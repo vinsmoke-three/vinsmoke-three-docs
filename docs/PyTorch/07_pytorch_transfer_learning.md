@@ -439,7 +439,7 @@ summary(model=model,
 ) 
 ```
 
-![torchinfo.summaryの出力](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/06-torchinfo-summary-unfrozen-layers.png)
+![torchinfo.summaryの出力](07_pytorch_transfer_learning_files/07-torchinfo-summary-unfrozen-layers.png)
 
 うわあ！これは大きなモデルです！
 
@@ -455,7 +455,7 @@ summary(model=model,
 
 転移学習のプロセスは通常以下のように進みます：事前学習済みモデルの一部のベース層（通常は`features`セクション）を凍結し、出力層（ヘッド/分類器層とも呼ばれる）を自分のニーズに合わせて調整します。
 
-![分類器ヘッドの変更](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/06-v2-effnet-changing-the-classifier-head.png)
+![分類器ヘッドの変更](07_pytorch_transfer_learning_files/07-v2-effnet-changing-the-classifier-head.png)
 
 *事前学習済みモデルの出力層を自分の問題に合うように変更することで、出力をカスタマイズできます。元の`torchvision.models.efficientnet_b0()`は、訓練されたデータセットであるImageNetに1000クラスがあるため、`out_features=1000`で提供されます。しかし、ピザ、ステーキ、寿司の画像を分類する私たちの問題では、`out_features=3`のみが必要です。*
 
@@ -530,7 +530,7 @@ summary(model,
 )
 ```
 
-![凍結層後のtorchinfo.summaryの出力](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/06-torchinfo-summary-frozen-layers.png)
+![凍結層後のtorchinfo.summaryの出力](07_pytorch_transfer_learning_files/07-torchinfo-summary-frozen-layers.png)
 
 おお、おお！ここにはかなりの変化があります！
 

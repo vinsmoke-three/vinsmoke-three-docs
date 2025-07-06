@@ -133,6 +133,9 @@ extra:
     実践: practical
     Python: python
     FashionMNIST: fashion-mnist
+    実験追跡: experiment-tracking
+    TensorBoard: tensorboard
+    転移学習: transfer-learning
   
 # Page tree
 nav:
@@ -146,3 +149,4 @@ nav:
     - 5. PyTorch custom datasets: PyTorch/05_pytorch_custom_datasets.md
     - 6. PyTorch modular: PyTorch/06_pytorch_modular.md
     - 7. PyTorch transfer learning: PyTorch/07_pytorch_transfer_learning.md
+    - 8. PyTorch experiment tracking: PyTorch/08_pytorch_experiment_tracking.md

@@ -38,5 +38,6 @@
 ### 上級者向け
 1. [PyTorch modular](PyTorch/06_pytorch_modular.md) - コードのモジュール化と再利用可能なMLパイプラインの構築
 2. [PyTorch transfer learning](PyTorch/07_pytorch_transfer_learning.md) - 転移学習で事前学習済みモデルを活用した高精度画像分類
+3. [PyTorch experiment tracking](PyTorch/08_pytorch_experiment_tracking.md) - TensorBoardを使った実験追跡と複数モデルの体系的比較
 
 ---

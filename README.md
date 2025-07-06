@@ -8,13 +8,14 @@ PyTorch、機械学習、深層学習の実践的なチュートリアルとコ�
 
 ### PyTorchチュートリアル
 
-- **[PyTorch fundamentals](docs/PyTorch/00_pytorch_fundamentals.md)** - テンソル操作とPyTorchの基本概念
-- **[PyTorch workflow](docs/PyTorch/01_pytorch_workflow.md)** - 機械学習プロジェクトの基本的な流れ
-- **[PyTorch classification](docs/PyTorch/02_pytorch_classification.md)** - 分類問題の実装
-- **[PyTorch computer vision](docs/PyTorch/03_pytorch_computer_vision.md)** - コンピュータビジョンとFashionMNIST画像分類
-- **[PyTorch custom datasets](docs/PyTorch/04_pytorch_custom_datasets.md)** - カスタムデータセットと画像分類モデルの構築
+- **[PyTorch fundamentals](docs/PyTorch/01_pytorch_fundamentals.md)** - テンソル操作とPyTorchの基本概念
+- **[PyTorch workflow](docs/PyTorch/02_pytorch_workflow.md)** - 機械学習プロジェクトの基本的な流れ
+- **[PyTorch classification](docs/PyTorch/03_pytorch_classification.md)** - 分類問題の実装
+- **[PyTorch computer vision](docs/PyTorch/04_pytorch_computer_vision.md)** - コンピュータビジョンとFashionMNIST画像分類
+- **[PyTorch custom datasets](docs/PyTorch/05_pytorch_custom_datasets.md)** - カスタムデータセットと画像分類モデルの構築
 - **[PyTorch modular](docs/PyTorch/06_pytorch_modular.md)** - コードのモジュール化と再利用可能なMLパイプラインの構築
 - **[PyTorch transfer learning](docs/PyTorch/07_pytorch_transfer_learning.md)** - 転移学習で事前学習済みモデルを活用した高精度画像分類
+- **[PyTorch experiment tracking](docs/PyTorch/08_pytorch_experiment_tracking.md)** - TensorBoardを使った実験追跡と複数モデルの体系的比較
 
 ## 🛠️ 技術スタック
 
