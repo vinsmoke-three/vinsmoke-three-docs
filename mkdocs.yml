@@ -1,6 +1,6 @@
 site_name: vinsmoke-three - 機械学習・深層学習ドキュメント
 site_url: https://vinsmoke-three.com
-site_description: PyTorch、機械学習、深層学習の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイト
+site_description: PyTorch、機械学習、深層学習の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイト。初心者から上級者まで段階的に学習できます。
 site_author: vinsmoke-three
 repo_url: https://github.com/vinsmoke-three/vinsmoke-three-docs
 repo_name: vinsmoke-three/vinsmoke-three-docs
@@ -70,12 +70,13 @@ plugins:
 copyright: Copyright &copy; 2025 - 2025 vinsmoke-three
 
 markdown_extensions:
-  - meta
   - attr_list
   - md_in_html
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -96,6 +97,13 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/meta.js
+  - javascripts/structured-data.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 extra:
   status:
     new: Recently added
@@ -107,6 +115,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/vinsmoke-three
       name: GitHub
+  generator: false
   tags:
     PyTorch: pytorch
     機械学習: machine-learning
@@ -150,3 +159,4 @@ nav:
     - 6. PyTorch modular: PyTorch/06_pytorch_modular.md
     - 7. PyTorch transfer learning: PyTorch/07_pytorch_transfer_learning.md
     - 8. PyTorch experiment tracking: PyTorch/08_pytorch_experiment_tracking.md
+    - 9. PyTorch paper replicating: PyTorch/09_pytorch_paper_replicating.md

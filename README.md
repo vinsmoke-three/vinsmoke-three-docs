@@ -16,6 +16,7 @@ PyTorch、機械学習、深層学習の実践的なチュートリアルとコ�
 - **[PyTorch modular](docs/PyTorch/06_pytorch_modular.md)** - コードのモジュール化と再利用可能なMLパイプラインの構築
 - **[PyTorch transfer learning](docs/PyTorch/07_pytorch_transfer_learning.md)** - 転移学習で事前学習済みモデルを活用した高精度画像分類
 - **[PyTorch experiment tracking](docs/PyTorch/08_pytorch_experiment_tracking.md)** - TensorBoardを使った実験追跡と複数モデルの体系的比較
+- **[PyTorch paper replicating](docs/PyTorch/09_pytorch_paper_replicating.md)** - Vision Transformerを一から実装してFoodVision Miniに適用する
 
 ## 🛠️ 技術スタック
 
@@ -92,10 +93,13 @@ PyTorch、機械学習、深層学習の実践的なチュートリアルとコ�
 ### 実装済みの機能
 
 - **メタデータ**: 各ページに適切なタイトル、説明、キーワードを設定
+- **OGP対応**: Open Graph Protocol対応でSNSシェア最適化
+- **Twitter Card**: Twitter での表示最適化
+- **構造化データ**: JSON-LD形式でサイト情報を構造化
 - **サイトマップ**: 自動生成でクローラビリティ向上
 - **HTML圧縮**: ページ読み込み速度の最適化
 - **日本語検索**: 日本語コンテンツに最適化された検索機能
-- **構造化データ**: 見出しとナビゲーションの適切な階層化
+- **数式表示**: MathJax 3によるLaTeX数式レンダリング
 
 ### Google Analytics設定
 

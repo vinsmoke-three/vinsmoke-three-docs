@@ -1,10 +1,20 @@
+---
+title: "vinsmoke-three - 機械学習・深層学習の実践的チュートリアル"
+description: "PyTorchを使った機械学習・深層学習の実践的なチュートリアル。初心者から上級者まで段階的に学習できる日本語の技術ドキュメント。"
+---
+
 # vinsmoke-three ドキュメントへようこそ
 
-このサイトは機械学習・深層学習をはじめとした技術分野の知識とノウハウを体系的にまとめたドキュメントサイトです。
+**機械学習・深層学習の実践的な学習リソース**
 
-## コンテンツについて
+このサイトは、PyTorchを中心とした機械学習・深層学習の知識とノウハウを体系的にまとめた日本語の技術ドキュメントサイトです。
 
-実践的なコードと詳細な解説を通して、複雑な技術概念を分かりやすく説明しています。初心者から上級者まで、段階的に学習できる構成になっています。
+## 🎯 このサイトの特徴
+
+- **実践重視**: 実際に動作するコードと詳細な解説
+- **段階的学習**: 初心者から上級者まで、段階的に学習できる構成
+- **日本語解説**: 複雑な技術概念を分かりやすい日本語で説明
+- **最新技術**: Vision Transformerなど最新の研究成果も含む実装
 
 ---
 
@@ -39,5 +49,6 @@
 1. [PyTorch modular](PyTorch/06_pytorch_modular.md) - コードのモジュール化と再利用可能なMLパイプラインの構築
 2. [PyTorch transfer learning](PyTorch/07_pytorch_transfer_learning.md) - 転移学習で事前学習済みモデルを活用した高精度画像分類
 3. [PyTorch experiment tracking](PyTorch/08_pytorch_experiment_tracking.md) - TensorBoardを使った実験追跡と複数モデルの体系的比較
+4. [PyTorch paper replicating](PyTorch/09_pytorch_paper_replicating.md) - Vision Transformerを一から実装してFoodVision Miniに適用する
 
 ---
