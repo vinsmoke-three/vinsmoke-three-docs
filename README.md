@@ -17,6 +17,7 @@ PyTorch、機械学習、深層学習の実践的なチュートリアルとコ�
 - **[PyTorch transfer learning](docs/PyTorch/07_pytorch_transfer_learning.md)** - 転移学習で事前学習済みモデルを活用した高精度画像分類
 - **[PyTorch experiment tracking](docs/PyTorch/08_pytorch_experiment_tracking.md)** - TensorBoardを使った実験追跡と複数モデルの体系的比較
 - **[PyTorch paper replicating](docs/PyTorch/09_pytorch_paper_replicating.md)** - Vision Transformerを一から実装してFoodVision Miniに適用する
+- **[PyTorch model deployment](docs/PyTorch/10_pytorch_model_deployment.md)** - PyTorchモデルのデプロイメント - FoodVision Bigの構築とHugging Face Spacesへの公開
 
 ## 🛠️ 技術スタック
 
