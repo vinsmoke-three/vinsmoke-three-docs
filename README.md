@@ -1,6 +1,6 @@
 # vinsmoke-three ドキュメントサイト
 
-PyTorch、機械学習、深層学習の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイトです。
+PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイトです。
 
 🌐 **サイトURL**: https://vinsmoke-three.com
 
@@ -18,6 +18,10 @@ PyTorch、機械学習、深層学習の実践的なチュートリアルとコ�
 - **[PyTorch experiment tracking](docs/PyTorch/08_pytorch_experiment_tracking.md)** - TensorBoardを使った実験追跡と複数モデルの体系的比較
 - **[PyTorch paper replicating](docs/PyTorch/09_pytorch_paper_replicating.md)** - Vision Transformerを一から実装してFoodVision Miniに適用する
 - **[PyTorch model deployment](docs/PyTorch/10_pytorch_model_deployment.md)** - PyTorchモデルのデプロイメント - FoodVision Bigの構築とHugging Face Spacesへの公開
+
+### 大規模言語モデル・自然言語処理
+
+- **[Transformer Models](docs/LLM/01_transformer_models.md)** - Transformerモデルの基本概念から実装まで、NLPとLLMの違いを理解する
 
 ## 🛠️ 技術スタック
 

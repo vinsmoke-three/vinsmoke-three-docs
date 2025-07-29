@@ -23,6 +23,9 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 ### 機械学習・深層学習
 - **[PyTorch](PyTorch/01_pytorch_fundamentals.md)** - テンソル操作から始める深層学習の基礎
 
+### 大規模言語モデル・自然言語処理
+- **[Transformer Models](LLM/01_transformer_models.md)** - Transformerモデルの基本概念から実装まで
+
 ### データサイエンス
 *準備中*
 
@@ -51,5 +54,8 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 3. [PyTorch experiment tracking](PyTorch/08_pytorch_experiment_tracking.md) - TensorBoardを使った実験追跡と複数モデルの体系的比較
 4. [PyTorch paper replicating](PyTorch/09_pytorch_paper_replicating.md) - Vision Transformerを一から実装してFoodVision Miniに適用する
 5. [PyTorch model deployment](PyTorch/10_pytorch_model_deployment.md) - FoodVision Bigの構築とHugging Face Spacesへの公開
+
+### 大規模言語モデル・自然言語処理
+1. [Transformer Models](LLM/01_transformer_models.md) - Transformerモデルの基本概念、NLPとLLMの違い、実装の基礎
 
 ---

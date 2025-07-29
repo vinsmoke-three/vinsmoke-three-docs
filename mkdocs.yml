@@ -1,6 +1,6 @@
 site_name: vinsmoke-three - 機械学習・深層学習ドキュメント
 site_url: https://vinsmoke-three.com
-site_description: PyTorch、機械学習、深層学習の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイト。初心者から上級者まで段階的に学習できます。
+site_description: PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイト。初心者から上級者まで段階的に学習できます。
 site_author: vinsmoke-three
 repo_url: https://github.com/vinsmoke-three/vinsmoke-three-docs
 repo_name: vinsmoke-three/vinsmoke-three-docs
@@ -145,6 +145,13 @@ extra:
     実験追跡: experiment-tracking
     TensorBoard: tensorboard
     転移学習: transfer-learning
+    Transformer: transformer
+    LLM: large-language-model
+    自然言語処理: natural-language-processing
+    NLP: nlp
+    BERT: bert
+    GPT: gpt
+    大規模言語モデル: large-language-model
   
 # Page tree
 nav:
@@ -161,3 +168,5 @@ nav:
     - 8. PyTorch experiment tracking: PyTorch/08_pytorch_experiment_tracking.md
     - 9. PyTorch paper replicating: PyTorch/09_pytorch_paper_replicating.md
     - 10. PyTorch model deployment: PyTorch/10_pytorch_model_deployment.md
+  - LLM:
+    - 1. Transformer models: LLM/01_transformer_models.md
