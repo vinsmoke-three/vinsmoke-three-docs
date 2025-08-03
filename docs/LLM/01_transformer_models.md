@@ -49,7 +49,7 @@ NLPは、人間の言語に関するあらゆることを理解することに�
 
 近年、NLP分野は大規模言語モデル（LLM）によって革命的な変化を遂げています。GPT（Generative Pre-trained Transformer）やLlamaなどのアーキテクチャを含むこれらのモデルは、言語処理で可能なことを変革しました。
 
-!!! tip "LLM"
+!!! tip "豆知識"
     大規模言語モデル（LLM）は、膨大なテキストデータで訓練されたAIモデルで、人間のようなテキストを理解・生成し、言語のパターンを認識し、タスク固有の訓練なしに多様な言語タスクを実行できます。これらは自然言語処理（NLP）分野における重要な進歩を表しています。
 
 LLMの特徴：
@@ -450,27 +450,27 @@ Transformerモデルの（短い）歴史におけるいくつかの参考点は
 
 タスクの例は、*n* 個の前の単語を読んだ後の文の次の単語を予測することです。これは *因果言語モデリング* と呼ばれます。出力が過去と現在の入力に依存するが、将来のものには依存しないためです。
 
-![因果言語モデリングの例](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/causal_modeling.svg)
+![因果言語モデリングの例](01_transformer_models_files/causal_modeling.png)
 
 別の例は *マスク言語モデリング* で、モデルが文中のマスクされた単語を予測します。
 
-![マスク言語モデリングの例](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/masked_modeling.svg)
+![マスク言語モデリングの例](01_transformer_models_files/masked_modeling.png)
 
 ### Transformersは大きなモデルである
 
 いくつかの外れ値（DistilBERTなど）を除いて、より良い性能を達成する一般的な戦略は、モデルのサイズと事前訓練されるデータの量を増やすことです。
 
-![最近のTransformersモデルのパラメータ数](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/model_parameters.png)
+![最近のTransformersモデルのパラメータ数](01_transformer_models_files/model_parameters.png)
 
 残念ながら、モデル、特に大きなモデルの訓練には大量のデータが必要です。これは時間と計算リソースの点で非常にコストがかかります。以下のグラフで見ることができるように、環境への影響にも変換されます。
 
-![大規模言語モデルの炭素足跡](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/carbon_footprint.svg)
+![大規模言語モデルの炭素足跡](01_transformer_models_files/carbon_footprint.png)
 
 ### 転移学習
 
 *事前訓練* は、モデルをゼロから訓練する行為です：重みがランダムに初期化され、事前の知識なしに訓練が開始されます。
 
-![言語モデルの事前訓練は時間とお金の両方でコストがかかる](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/pretraining.svg)
+![言語モデルの事前訓練は時間とお金の両方でコストがかかる](01_transformer_models_files/pretraining.png)
 
 この事前訓練は通常、非常に大量のデータで行われます。したがって、非常に大きなデータコーパスが必要で、訓練には数週間かかることがあります。
 
@@ -482,7 +482,7 @@ Transformerモデルの（短い）歴史におけるいくつかの参考点は
 
 例えば、英語で訓練された事前訓練済みモデルを活用し、次にarXivコーパスでファインチューニングして、科学／研究ベースのモデルを作ることができます。ファインチューニングには限られた量のデータのみが必要です：事前訓練済みモデルが取得した知識が「転移」されるため、*転移学習* という用語が使われます。
 
-![言語モデルのファインチューニングは事前訓練より時間とお金の両方で安価](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/finetuning.svg)
+![言語モデルのファインチューニングは事前訓練より時間とお金の両方で安価](01_transformer_models_files/finetuning.png)
 
 したがって、モデルのファインチューニングは、時間、データ、金銭、環境のコストが低くなります。完全な事前訓練よりも制約が少ないため、異なるファインチューニングスキームで反復することも、より迅速で簡単です。
 
@@ -496,7 +496,7 @@ Transformerモデルの（短い）歴史におけるいくつかの参考点は
 * **エンコーダ（左）**: エンコーダは入力を受け取り、その表現（特徴）を構築します。これは、モデルが入力から理解を獲得するように最適化されていることを意味します。
 * **デコーダ（右）**: デコーダは、エンコーダの表現（特徴）を他の入力と一緒に使用して、ターゲットシーケンスを生成します。これは、モデルが出力を生成するように最適化されていることを意味します。
 
-![Transformersモデルのアーキテクチャ](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/transformers_blocks.svg)
+![Transformersモデルのアーキテクチャ](01_transformer_models_files/transformers_blocks.png)
 
 これらの各部分は、タスクに応じて独立して使用できます：
 
@@ -524,7 +524,7 @@ Transformerアーキテクチャは当初翻訳のために設計されました
 
 元のTransformerアーキテクチャは次のようになっており、エンコーダが左側、デコーダが右側にあります：
 
-![Transformersモデルのアーキテクチャ](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/transformers.svg)
+![Transformersモデルのアーキテクチャ](01_transformer_models_files/transformers.png)
 
 デコーダブロック内の最初のアテンション層は、デコーダへのすべての（過去の）入力に注意を払いますが、2番目のアテンション層はエンコーダの出力を使用することに注意してください。したがって、現在の単語を最適に予測するために、入力文全体にアクセスできます。これは、異なる言語が異なる順序で単語を配置する文法規則を持つ可能性があるため、または文中で後に提供される一部の文脈が与えられた単語の最適な翻訳を決定するのに役立つ可能性があるため、非常に有用です。
 
@@ -581,13 +581,13 @@ Transformersライブラリでは、言語モデルは一般的に3つのアー�
 
 3. **エンコーダ・デコーダモデル**（T5、BARTなど）: これらのモデルは両方のアプローチを組み合わせ、エンコーダを使用して入力を理解し、デコーダを使用して出力を生成します。翻訳、要約、質問応答などのsequence-to-sequenceタスクに優れています。
 
-![言語用transformerモデル](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/transformers_architecture.png)
+![言語用transformerモデル](01_transformer_models_files/transformers_architecture.png)
 
 前のセクションでカバーしたように、言語モデルは通常、大量のテキストデータで自己教師あり方式（人間のアノテーションなし）で事前訓練され、次に特定のタスクでファインチューニングされます。転移学習として知られるこのアプローチにより、これらのモデルは比較的少量のタスク固有データで多くの異なるNLPタスクに適応できます。
 
 以下のセクションでは、特定のモデルアーキテクチャと、それらが音声、ビジョン、テキストドメインの様々なタスクにどのように適用されるかを探求します。
 
-!!! tip "最適なTransformerアーキテクチャ"
+!!! tip "豆知識"
     特定のNLPタスクに最適なTransformerアーキテクチャ（エンコーダ、デコーダ、または両方）のどの部分かを理解することは、適切なモデルを選択するために重要です。一般的に、双方向の文脈を必要とするタスクはエンコーダを使用し、テキストを生成するタスクはデコーダを使用し、あるシーケンスを別のシーケンスに変換するタスクはエンコーダ・デコーダを使用します。
 
 #### テキスト生成
@@ -596,9 +596,7 @@ Transformersライブラリでは、言語モデルは一般的に3つのアー�
 
 [GPT-2](https://huggingface.co/docs/transformers/model_doc/gpt2)は、大量のテキストで事前訓練されたデコーダのみのモデルです。プロンプトが与えられると説得力のある（ただし常に真実ではない！）テキストを生成し、明示的に訓練されていないにもかかわらず質問応答などの他のNLPタスクを完了できます。
 
-<div class="flex justify-center">
-    <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/gpt2_architecture.png"/>
-</div>
+![gpt2_architecture](01_transformer_models_files/gpt2_architecture.png)
 
 1. GPT-2は[バイトペア符号化（BPE）](https://huggingface.co/docs/transformers/tokenizer_summary#bytepair-encoding-bpe)を使用して単語をトークン化し、トークン埋め込みを生成します。位置符号化がトークン埋め込みに追加され、シーケンス内の各トークンの位置を示します。入力埋め込みは複数のデコーダブロックを通過して、最終的な隠れ状態を出力します。各デコーダブロック内で、GPT-2は *マスクされた自己アテンション* 層を使用します。これは、GPT-2が将来のトークンに注意を払うことができないことを意味します。左側のトークンのみに注意を払うことが許可されています。これは、マスクされた自己アテンションでは、将来のトークンのスコアを`0`に設定するためにアテンションマスクが使用されるため、BERTの[`mask`]トークンとは異なります。
 
@@ -642,7 +640,7 @@ GPT-2の事前訓練目的は完全に[因果言語モデリング](https://hugg
 
 質問応答に挑戦する準備はできましたか？完全な[質問応答ガイド](https://huggingface.co/docs/transformers/tasks/question_answering)をチェックして、DistilBERTをファインチューニングし、推論に使用する方法を学びましょう！
 
-!!! tip "BERTの活用"
+!!! tip "豆知識"
     💡 BERTが事前訓練されると、異なるタスクに使用するのがいかに簡単かに注目してください。事前訓練済みモデルに特定のヘッドを追加して、隠れ状態を希望する出力に操作するだけです！
 
 #### 要約
@@ -651,9 +649,7 @@ GPT-2の事前訓練目的は完全に[因果言語モデリング](https://hugg
 
 [BART](https://huggingface.co/docs/transformers/model_doc/bart)や[T5](model_doc/t5)などのエンコーダ・デコーダモデルは、要約タスクのsequence-to-sequenceパターン用に設計されています。このセクションでBARTがどのように動作するかを説明し、最後にT5をファインチューニングしてみることができます。
 
-<div class="flex justify-center">
-    <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/bart_architecture.png"/>
-</div>
+![bart_architecture](01_transformer_models_files/bart_architecture.png)
 
 1. BARTのエンコーダアーキテクチャはBERTと非常に似ており、テキストのトークンと位置埋め込みを受け入れます。BARTは入力を破損させ、次にデコーダでそれを再構築することで事前訓練されます。特定の破損戦略を持つ他のエンコーダとは異なり、BARTは任意のタイプの破損を適用できます。ただし、*テキスト埋込み*破損戦略が最も効果的です。テキスト埋込みでは、多数のテキストスパンが **単一の** [`mask`]トークンに置き換えられます。これは重要です。なぜなら、モデルはマスクされたトークンを予測する必要があり、モデルに欠落したトークンの数を予測することを教えるからです。入力埋め込みとマスクされたスパンはエンコーダを通過して最終隠れ状態を出力しますが、BERTとは異なり、BARTは最後に単語を予測するための最終フィードフォワードネットワークを追加しません。
 
@@ -671,7 +667,7 @@ BARTは、多くの異なる言語で事前訓練された翻訳を目的とし�
 
 翻訳に挑戦する準備はできましたか？完全な[翻訳ガイド](https://huggingface.co/docs/transformers/tasks/translation)をチェックして、T5をファインチューニングし、推論に使用する方法を学びましょう！
 
-!!! tip "共通パターンの理解"
+!!! tip "豆知識"
     このガイド全体で見てきたように、多くのモデルは異なるタスクに対処するにもかかわらず、類似のパターンに従います。これらの共通パターンを理解することで、新しいモデルがどのように動作するかを素早く把握し、既存のモデルを特定のニーズに適応させることができます。
 
 ### テキストを超えたモダリティ
@@ -684,9 +680,7 @@ Transformerはテキストに限定されません。音声、画像、ビデオ
 
 [Whisper](https://huggingface.co/docs/transformers/main/en/model_doc/whisper)は、68万時間のラベル付き音声データで事前訓練されたエンコーダ・デコーダ（sequence-to-sequence）transformerです。この大量の事前訓練データにより、英語や多くの他の言語での音声タスクでゼロショット性能が可能になります。デコーダにより、Whisperはエンコーダが学習した音声表現を、追加のファインチューニングなしでテキストなどの有用な出力にマップできます。Whisperはそのまま動作します。
 
-<div class="flex justify-center">
-    <img src="https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/whisper_architecture.png"/>
-</div>
+![whisper_architecture](01_transformer_models_files/whisper_architecture.png)
 
 図は[Whisper論文](https://huggingface.co/papers/2212.04356)からです。
 
@@ -700,7 +694,7 @@ Whisperは、ウェブから収集された68万時間のラベル付き音声�
 
 Whisperが事前訓練されたので、ゼロショット推論に直接使用するか、特定のタスクでの性能向上のためにデータでファインチューニングできます。自動音声認識や音声翻訳などです！
 
-!!! tip "Whisperの革新"
+!!! tip "豆知識"
     Whisperの重要な革新は、インターネットからの多様で弱い監督の音声データでの前例のない規模での訓練です。これにより、タスク固有のファインチューニングなしで異なる言語、アクセント、タスクに驚くほどよく一般化できます。
 
 #### 自動音声認識
@@ -735,7 +729,7 @@ Device set to use mps:0
 1. 画像をパッチのシーケンスに分割し、Transformerで並列に処理する。
 2. [ConvNeXT](https://huggingface.co/docs/transformers/model_doc/convnext)などの現代的なCNNを使用する。これは畳み込み層に依存しますが、現代のネットワーク設計を採用しています。
 
-!!! tip "ハイブリッドアプローチ"
+!!! tip "豆知識"
     3番目のアプローチは、Transformerと畳み込みを混合します（例：[Convolutional Vision Transformer](https://huggingface.co/docs/transformers/model_doc/cvt)や[LeViT](https://huggingface.co/docs/transformers/model_doc/levit)）。これらは、ここで検討する2つのアプローチを組み合わせるだけなので、議論しません。
 
 ViTとConvNeXTは一般的に画像分類に使用されますが、物体検出、セグメンテーション、深度推定などの他のビジョンタスクについては、DETR、Mask2Former、GLPNをそれぞれ見ていきます；これらのモデルはそれらのタスクにより適しています。
@@ -748,9 +742,7 @@ ViTとConvNeXTは両方とも画像分類に使用できます；主な違いは
 
 [ViT](https://huggingface.co/docs/transformers/model_doc/vit)は畳み込みを純粋なTransformerアーキテクチャに完全に置き換えます。元のTransformerに慣れている場合、ViTを理解するのにほぼ到達しています。
 
-<div class="flex justify-center">
-    <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/model_doc/vit_architecture.jpg"/>
-</div>
+![vit_architecture](01_transformer_models_files/vit_architecture.png)
 
 ViTが導入した主な変更は、画像がTransformerに供給される方法でした：
 
@@ -764,7 +756,7 @@ ViTが導入した主な変更は、画像がTransformerに供給される方法
 
 画像分類に挑戦する準備はできましたか？完全な[画像分類ガイド](https://huggingface.co/docs/transformers/tasks/image_classification)をチェックして、ViTをファインチューニングし、推論に使用する方法を学びましょう！
 
-!!! tip "ViTとBERTの類似性"
+!!! tip "豆知識"
     ViTとBERTの類似性に注目してください：両方とも全体的な表現をキャプチャするために特別なトークン（`[CLS]`）を使用し、両方とも埋め込みに位置情報を追加し、両方ともTransformerエンコーダを使用してトークン/パッチのシーケンスを処理します。
 
 ## Transformerアーキテクチャ
@@ -773,7 +765,7 @@ ViTが導入した主な変更は、画像がTransformerに供給される方法
 
 このセクションでは、Transformerモデルの3つの主要なアーキテクチャバリアントをより深く掘り下げ、それぞれをいつ使用するかを理解します。
 
-!!! tip "Transformerの3つのアーキテクチャ"
+!!! tip "豆知識"
     ほとんどのTransformerモデルは3つのアーキテクチャの1つを使用することを覚えておいてください：エンコーダのみ、デコーダのみ、またはエンコーダ・デコーダ（sequence-to-sequence）。これらの違いを理解することで、特定のタスクに適したモデルを選択するのに役立ちます。
 
 ### エンコーダモデル
@@ -873,7 +865,7 @@ Sequence-to-sequenceモデルは、意味を保持しながらあるテキスト
 | 質問応答（生成的） | エンコーダ・デコーダまたはデコーダ | T5、GPT |
 | 会話AI | デコーダ | GPT、LLaMA |
 
-!!! tip "モデル選択の指針"
+!!! tip "豆知識"
     どのモデルを使用するか迷ったときは、以下を考慮してください：
     
     1. あなたのタスクはどのような理解を必要としますか？（双方向か単方向か）
@@ -886,7 +878,7 @@ Sequence-to-sequenceモデルは、意味を保持しながらあるテキスト
 
 ほとんどのTransformerモデルは、アテンション行列が正方形であるという意味で完全なアテンションを使用します。長いテキストがあるときには、大きな計算ボトルネックになる可能性があります。LongformerやReformerは、より効率的になり、アテンション行列のスパース版を使用して訓練を高速化しようとするモデルです。
 
-!!! tip "アテンションの計算複雑度"
+!!! tip "豆知識"
     標準的なアテンションメカニズムは、シーケンス長をnとしてO(n²)の計算複雑度を持ちます。これは非常に長いシーケンスでは問題になります。以下の特殊なアテンションメカニズムは、この制限に対処するのに役立ちます。
 
 #### LSHアテンション
@@ -899,9 +891,7 @@ Sequence-to-sequenceモデルは、意味を保持しながらあるテキスト
 
 いくつかの事前選択された入力トークンにはグローバルアテンションも与えられます：これらの少数のトークンについて、アテンション行列はすべてのトークンにアクセスでき、このプロセスは対称的です：他のすべてのトークンはこれらの特定のトークンにアクセスできます（ローカルウィンドウ内のものに加えて）。これは論文の図2dに示されており、サンプルアテンションマスクについては以下を参照してください：
 
-<div class="flex justify-center">
-    <img scale="50 %" align="center" src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/local_attention_mask.png"/>
-</div>
+![local_attention_mask](01_transformer_models_files/local_attention_mask.png)
 
 より少ないパラメータでこれらのアテンション行列を使用することで、モデルはより大きなシーケンス長を持つ入力を持つことができます。
 

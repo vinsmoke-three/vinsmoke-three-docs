@@ -22,6 +22,7 @@ PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実�
 ### 大規模言語モデル・自然言語処理
 
 - **[Transformer Models](docs/LLM/01_transformer_models.md)** - Transformerモデルの基本概念から実装まで、NLPとLLMの違いを理解する
+- **[Using Transformers](docs/LLM/02_using_transformers.md)** - Transformersライブラリの使い方 - モデルとトークナイザーの基本
 
 ## 🛠️ 技術スタック
 

@@ -170,3 +170,4 @@ nav:
     - 10. PyTorch model deployment: PyTorch/10_pytorch_model_deployment.md
   - LLM:
     - 1. Transformer models: LLM/01_transformer_models.md
+    - 2. Using transformers: LLM/02_using_transformers.md
