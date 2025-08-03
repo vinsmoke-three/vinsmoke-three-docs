@@ -21,10 +21,10 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 ## 技術スタック
 
 ### 機械学習・深層学習
-- **[PyTorch](PyTorch/01_pytorch_fundamentals.md)** - テンソル操作から始める深層学習の基礎
+- **PyTorch** - テンソル操作、ニューラルネットワーク、コンピュータビジョン、転移学習、実験追跡、モデルデプロイ
 
-### 大規模言語モデル・自然言語処理
-- **[Transformer Models](LLM/01_transformer_models.md)** - Transformerモデルの基本概念から実装まで
+### 大規模言語モデル・自然言語処理  
+- **Transformers** - モデル理解、ライブラリ活用、pipeline操作、トークナイザー、実践的実装
 
 ### データサイエンス
 *準備中*
@@ -57,5 +57,6 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 
 ### 大規模言語モデル・自然言語処理
 1. [Transformer Models](LLM/01_transformer_models.md) - Transformerモデルの基本概念、NLPとLLMの違い、実装の基礎
+2. [Using Transformers](LLM/02_using_transformers.md) - Hugging Face Transformersライブラリの実践的な使い方、pipelineの仕組み、モデルとトークナイザーの操作
 
 ---
