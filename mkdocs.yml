@@ -171,3 +171,4 @@ nav:
   - LLM:
     - 1. Transformer models: LLM/01_transformer_models.md
     - 2. Using transformers: LLM/02_using_transformers.md
+    - 3. Fine-tuning a pretrained model: LLM/03_fine_tuning_a_pretrained_model.md

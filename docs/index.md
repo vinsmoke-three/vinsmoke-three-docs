@@ -58,5 +58,6 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 ### 大規模言語モデル・自然言語処理
 1. [Transformer Models](LLM/01_transformer_models.md) - Transformerモデルの基本概念、NLPとLLMの違い、実装の基礎
 2. [Using Transformers](LLM/02_using_transformers.md) - Hugging Face Transformersライブラリの実践的な使い方、pipelineの仕組み、モデルとトークナイザーの操作
+3. [Fine-tuning a pretrained model](LLM/03_fine_tuning_a_pretrained_model.md) - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
 
 ---
