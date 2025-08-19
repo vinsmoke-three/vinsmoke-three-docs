@@ -169,6 +169,7 @@ nav:
     - 9. PyTorch paper replicating: PyTorch/09_pytorch_paper_replicating.md
     - 10. PyTorch model deployment: PyTorch/10_pytorch_model_deployment.md
   - LLM:
+    - 0. The illustrated transformer: LLM/00_illustrated_transformer.md
     - 1. Transformer models: LLM/01_transformer_models.md
     - 2. Using transformers: LLM/02_using_transformers.md
     - 3. Fine-tuning a pretrained model: LLM/03_fine_tuning_a_pretrained_model.md

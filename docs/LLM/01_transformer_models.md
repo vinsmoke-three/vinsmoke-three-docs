@@ -647,7 +647,7 @@ GPT-2の事前訓練目的は完全に[因果言語モデリング](https://hugg
 
 要約は、キー情報と意味を保持しながら、より長いテキストをより短いバージョンに凝縮することを含みます。
 
-[BART](https://huggingface.co/docs/transformers/model_doc/bart)や[T5](model_doc/t5)などのエンコーダ・デコーダモデルは、要約タスクのsequence-to-sequenceパターン用に設計されています。このセクションでBARTがどのように動作するかを説明し、最後にT5をファインチューニングしてみることができます。
+[BART](https://huggingface.co/docs/transformers/model_doc/bart)や[T5](https://huggingface.co/docs/transformers/model_doc/t5)などのエンコーダ・デコーダモデルは、要約タスクのsequence-to-sequenceパターン用に設計されています。このセクションでBARTがどのように動作するかを説明し、最後にT5をファインチューニングしてみることができます。
 
 ![bart_architecture](01_transformer_models_files/bart_architecture.png)
 
@@ -659,7 +659,7 @@ GPT-2の事前訓練目的は完全に[因果言語モデリング](https://hugg
 
 #### 翻訳
 
-翻訳は、意味を保持しながらテキストをある言語から別の言語に変換することを含みます。翻訳は、[BART](https://huggingface.co/docs/transformers/model_doc/bart)や[T5](model_doc/t5)などのエンコーダ・デコーダモデルを使用できるsequence-to-sequenceタスクのもう一つの例です。このセクションでBARTがどのように動作するかを説明し、最後にT5をファインチューニングしてみることができます。
+翻訳は、意味を保持しながらテキストをある言語から別の言語に変換することを含みます。翻訳は、[BART](https://huggingface.co/docs/transformers/model_doc/bart)や[T5](https://huggingface.co/docs/transformers/model_doc/t5)などのエンコーダ・デコーダモデルを使用できるsequence-to-sequenceタスクのもう一つの例です。このセクションでBARTがどのように動作するかを説明し、最後にT5をファインチューニングしてみることができます。
 
 BARTは、ソース言語をターゲット言語にデコードできる入力にマップするために、別個のランダムに初期化されたエンコーダを追加することで翻訳に適応します。この新しいエンコーダの埋め込みは、元の単語埋め込みの代わりに事前訓練済みエンコーダに渡されます。ソースエンコーダは、ソースエンコーダ、位置埋め込み、入力埋め込みをモデル出力からのクロスエントロピー損失で更新することで訓練されます。モデルパラメータはこの最初のステップで凍結され、すべてのモデルパラメータが2番目のステップで一緒に訓練されます。
 

@@ -14,7 +14,7 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 - **実践重視**: 実際に動作するコードと詳細な解説
 - **段階的学習**: 初心者から上級者まで、段階的に学習できる構成
 - **日本語解説**: 複雑な技術概念を分かりやすい日本語で説明
-- **最新技術**: Vision Transformerなど最新の研究成果も含む実装
+- **最新技術**: TransformerやVision Transformerなど最新の研究成果も含む実装
 
 ---
 
@@ -23,8 +23,8 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 ### 機械学習・深層学習
 - **PyTorch** - テンソル操作、ニューラルネットワーク、コンピュータビジョン、転移学習、実験追跡、モデルデプロイ
 
-### 大規模言語モデル・自然言語処理  
-- **Transformers** - モデル理解、ライブラリ活用、pipeline操作、トークナイザー、実践的実装
+### 大規模言語モデル・自然言語処理
+- **Transformers** - アーキテクチャ理解、ライブラリ活用、pipeline操作、トークナイザー、実践的実装
 
 ### データサイエンス
 *準備中*
@@ -56,8 +56,13 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 5. [PyTorch model deployment](PyTorch/10_pytorch_model_deployment.md) - FoodVision Bigの構築とHugging Face Spacesへの公開
 
 ### 大規模言語モデル・自然言語処理
-1. [Transformer Models](LLM/01_transformer_models.md) - Transformerモデルの基本概念、NLPとLLMの違い、実装の基礎
-2. [Using Transformers](LLM/02_using_transformers.md) - Hugging Face Transformersライブラリの実践的な使い方、pipelineの仕組み、モデルとトークナイザーの操作
-3. [Fine-tuning a pretrained model](LLM/03_fine_tuning_a_pretrained_model.md) - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
+
+#### 基礎理論
+1. [Transformerの図解](LLM/00_illustrated_transformer.md) - 「Attention is All You Need」論文のTransformerアーキテクチャを図解で詳しく解説
+
+#### 実装・実践
+2. [Transformer Models](LLM/01_transformer_models.md) - Transformerモデルの基本概念、NLPとLLMの違い、実装の基礎
+3. [Using Transformers](LLM/02_using_transformers.md) - Hugging Face Transformersライブラリの実践的な使い方、pipelineの仕組み、モデルとトークナイザーの操作
+4. [Fine-tuning a pretrained model](LLM/03_fine_tuning_a_pretrained_model.md) - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
 
 ---
