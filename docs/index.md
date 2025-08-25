@@ -21,7 +21,7 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 ## 技術スタック
 
 ### 機械学習・深層学習
-- **PyTorch** - テンソル操作、ニューラルネットワーク、コンピュータビジョン、転移学習、実験追跡、モデルデプロイ
+- **PyTorch** - Tensor操作、Neural Network、Computer Vision、転移学習、実験追跡、モデルデプロイ
 
 ### 大規模言語モデル・自然言語処理
 - **Transformers** - アーキテクチャ理解、ライブラリ活用、pipeline操作、トークナイザー、実践的実装
@@ -45,7 +45,7 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 
 ### 中級者向け
 1. [PyTorch classification](PyTorch/03_pytorch_classification.md) - 分類問題の実装
-2. [PyTorch computer vision](PyTorch/04_pytorch_computer_vision.md) - コンピュータビジョンとFashionMNIST画像分類
+2. [PyTorch computer vision](PyTorch/04_pytorch_computer_vision.md) - Computer VisionとFashionMNIST画像分類
 3. [PyTorch custom datasets](PyTorch/05_pytorch_custom_datasets.md) - カスタムデータセットと画像分類モデルの構築
 
 ### 上級者向け
@@ -64,5 +64,6 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 2. [Transformer Models](LLM/01_transformer_models.md) - Transformerモデルの基本概念、NLPとLLMの違い、実装の基礎
 3. [Using Transformers](LLM/02_using_transformers.md) - Hugging Face Transformersライブラリの実践的な使い方、pipelineの仕組み、モデルとトークナイザーの操作
 4. [Fine-tuning a pretrained model](LLM/03_fine_tuning_a_pretrained_model.md) - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
+5. [Hugging Face Tokenizersライブラリの完全ガイド](LLM/04_the_huggingface_tokenizers_library.md) - 高速トークナイザーの仕組みと実装、BPE・WordPiece・Unigramアルゴリズムの詳細解説
 
 ---

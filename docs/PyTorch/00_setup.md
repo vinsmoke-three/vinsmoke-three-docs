@@ -7,7 +7,7 @@ tags: ["環境構築", "PyTorch", "Python", "セットアップ", "初心者向�
 
 # PyTorch環境構築ガイド（Apple Silicon Mac）
 
-このガイドでは、Apple Silicon MacでPyTorchチュートリアルを実行するための環境構築方法を詳しく説明します。
+このガイドでは、Apple Silicon MacでPyTorchチュートリアルを実行するための環境構築方法を解説します。
 
 ## 必要なソフトウェア
 
@@ -17,7 +17,7 @@ tags: ["環境構築", "PyTorch", "Python", "セットアップ", "初心者向�
 - **Git**（オプション：ソースコード管理用）
 
 ### GPU使用時の追加要件
-- **Apple Silicon Mac**（M1、M2、M3チップ）
+- **Apple Silicon Mac**（M1/M2/M3チップ）
 - **MPS（Metal Performance Shaders）**対応
 
 ## セットアップ手順
@@ -54,7 +54,7 @@ conda install requests tqdm -c conda-forge
 ### Conda推奨ケース
 - **GPU対応PyTorch**: MPSとの互換性が重要
 - **科学計算ライブラリ**: NumPy、SciPy、matplotlibなど
-- **バイナリ依存関係**: コンパイル済みパッケージで高速
+- **バイナリ依存関係**: コンパイル済みパッケージで高速動作
 
 ### pip推奨ケース
 - **純粋なPythonパッケージ**: requestsやtqdmなど
@@ -63,7 +63,7 @@ conda install requests tqdm -c conda-forge
 
 ## インストール確認
 
-### GPU使用可能性の確認
+### GPU使用可否の確認
 ```python
 import torch
 

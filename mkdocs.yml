@@ -2,8 +2,8 @@ site_name: vinsmoke-three - 機械学習・深層学習ドキュメント
 site_url: https://vinsmoke-three.com
 site_description: PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイト。初心者から上級者まで段階的に学習できます。
 site_author: vinsmoke-three
-repo_url: https://github.com/vinsmoke-three/vinsmoke-three-docs
-repo_name: vinsmoke-three/vinsmoke-three-docs
+# repo_url: https://github.com/vinsmoke-three/vinsmoke-three-docs
+# repo_name: vinsmoke-three/vinsmoke-three-docs
 theme:
   name: material
   language: ja
@@ -92,6 +92,7 @@ markdown_extensions:
   - toc:
       permalink: true
       title: 目次
+      toc_depth: 2
 
 # Additional configuration
 extra_css:
@@ -173,3 +174,4 @@ nav:
     - 1. Transformer models: LLM/01_transformer_models.md
     - 2. Using transformers: LLM/02_using_transformers.md
     - 3. Fine-tuning a pretrained model: LLM/03_fine_tuning_a_pretrained_model.md
+    - 4. Tokenizers library: LLM/04_the_huggingface_tokenizers_library.md
