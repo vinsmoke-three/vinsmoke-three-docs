@@ -65,6 +65,6 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 3. [Using Transformers](LLM/02_using_transformers.md) - Hugging Face Transformersライブラリの実践的な使い方、pipelineの仕組み、モデルとトークナイザーの操作
 4. [Fine-tuning a pretrained model](LLM/03_fine_tuning_a_pretrained_model.md) - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
 5. [Hugging Face Tokenizersライブラリの完全ガイド](LLM/04_the_huggingface_tokenizers_library.md) - 高速トークナイザーの仕組みと実装、BPE・WordPiece・Unigramアルゴリズムの詳細解説
-6. [GPTをゼロから構築する完全ガイド](LLM/05_Let's_build_ GPT_from_scratch.md) - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
+6. [GPTをゼロから構築する完全ガイド](LLM/05_Let's_build_GPT_from_scratch.md) - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
 
 ---

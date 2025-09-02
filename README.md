@@ -26,7 +26,7 @@ PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実�
 - **[Using Transformers](docs/LLM/02_using_transformers.md)** - Transformersライブラリの使い方 - モデルとトークナイザーの基本
 - **[Fine-tuning a pretrained model](docs/LLM/03_fine_tuning_a_pretrained_model.md)** - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
 - **[Hugging Face Tokenizersライブラリの完全ガイド](docs/LLM/04_the_huggingface_tokenizers_library.md)** - 高速トークナイザーの仕組みと実装、BPE・WordPiece・Unigramアルゴリズムの詳細解説
-- **[GPTをゼロから構築する完全ガイド](docs/LLM/05_Let's_build_ GPT_from_scratch.md)** - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
+- **[GPTをゼロから構築する完全ガイド](docs/LLM/05_Let's_build_GPT_from_scratch.md)** - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
 
 ## 🛠️ 技術スタック
 
