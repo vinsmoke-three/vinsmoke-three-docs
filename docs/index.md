@@ -13,18 +13,18 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 
 - **実践重視**: 実際に動作するコードと詳細な解説
 - **段階的学習**: 初心者から上級者まで、段階的に学習できる構成
-- **日本語解説**: 複雑な技術概念を分かりやすい日本語で説明
-- **最新技術**: TransformerやVision Transformerなど最新の研究成果も含む実装
+- **日本語解説**: 複雑な技術概念をわかりやすい日本語で説明
+- **最新技術**: TransformerやVision Transformerなど最新の研究成果を含む実装
 
 ---
 
 ## 技術スタック
 
 ### 機械学習・深層学習
-- **PyTorch** - Tensor操作、Neural Network、Computer Vision、転移学習、実験追跡、モデルデプロイ
+- **PyTorch** - テンソル操作、ニューラルネットワーク、コンピュータビジョン、転移学習、実験追跡、モデルデプロイ
 
 ### 大規模言語モデル・自然言語処理
-- **Transformers** - アーキテクチャ理解、ライブラリ活用、pipeline操作、トークナイザー、実践的実装
+- **Transformers** - アーキテクチャ理解、ライブラリ活用、パイプライン操作、トークナイザー、実践的実装
 
 ### データサイエンス
 *準備中*
@@ -45,7 +45,7 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 
 ### 中級者向け
 1. [PyTorch classification](PyTorch/03_pytorch_classification.md) - 分類問題の実装
-2. [PyTorch computer vision](PyTorch/04_pytorch_computer_vision.md) - Computer VisionとFashionMNIST画像分類
+2. [PyTorch computer vision](PyTorch/04_pytorch_computer_vision.md) - コンピュータビジョンとFashionMNIST画像分類
 3. [PyTorch custom datasets](PyTorch/05_pytorch_custom_datasets.md) - カスタムデータセットと画像分類モデルの構築
 
 ### 上級者向け
@@ -66,5 +66,6 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 4. [Fine-tuning a pretrained model](LLM/03_fine_tuning_a_pretrained_model.md) - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
 5. [Hugging Face Tokenizersライブラリの完全ガイド](LLM/04_the_huggingface_tokenizers_library.md) - 高速トークナイザーの仕組みと実装、BPE・WordPiece・Unigramアルゴリズムの詳細解説
 6. [GPTをゼロから構築する完全ガイド](LLM/05_Let's_build_GPT_from_scratch.md) - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
+7. [Hugging Face Datasetsライブラリの完全ガイド](LLM/06_the_huggingface_datasets_library.md) - データセットの読み込み、前処理、保存、FAISSを使った意味検索システムの構築まで実践的に解説
 
 ---

@@ -176,3 +176,4 @@ nav:
     - 3. Fine-tuning a pretrained model: LLM/03_fine_tuning_a_pretrained_model.md
     - 4. Tokenizers library: LLM/04_the_huggingface_tokenizers_library.md
     - 5. Let't build GPT from scratch: LLM/05_Let's_build_GPT_from_scratch.md
+    - 6. Datasets library: LLM/06_the_huggingface_datasets_library.md

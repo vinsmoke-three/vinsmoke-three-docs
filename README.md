@@ -1,6 +1,6 @@
 # vinsmoke-three ドキュメントサイト
 
-PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイトです。
+PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実践的なチュートリアルとコード例を日本語で提供するドキュメントサイトです。
 
 🌐 **サイトURL**: https://vinsmoke-three.com
 
@@ -21,12 +21,13 @@ PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実�
 
 ### 大規模言語モデル・自然言語処理
 
-- **[Transformerの図解](docs/LLM/00_illustrated_transformer.md)** - Attention is All You Needで提案されたTransformerアーキテクチャを図解で詳しく解説
+- **[Transformerの図解](docs/LLM/00_illustrated_transformer.md)** - 「Attention is All You Need」論文で提案されたTransformerアーキテクチャを図解で詳しく解説
 - **[Transformer Models](docs/LLM/01_transformer_models.md)** - Transformerモデルの基本概念から実装まで、NLPとLLMの違いを理解する
 - **[Using Transformers](docs/LLM/02_using_transformers.md)** - Transformersライブラリの使い方 - モデルとトークナイザーの基本
 - **[Fine-tuning a pretrained model](docs/LLM/03_fine_tuning_a_pretrained_model.md)** - 事前訓練済みモデルのファインチューニング、Trainer APIとカスタム訓練ループの実装
 - **[Hugging Face Tokenizersライブラリの完全ガイド](docs/LLM/04_the_huggingface_tokenizers_library.md)** - 高速トークナイザーの仕組みと実装、BPE・WordPiece・Unigramアルゴリズムの詳細解説
 - **[GPTをゼロから構築する完全ガイド](docs/LLM/05_Let's_build_GPT_from_scratch.md)** - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
+- **[Hugging Face Datasetsライブラリの完全ガイド](docs/LLM/06_the_huggingface_datasets_library.md)** - データセットの読み込み、前処理、保存、FAISSを使った意味検索システムの構築まで実践的に解説
 
 ## 🛠️ 技術スタック
 
@@ -104,7 +105,7 @@ PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実�
 
 - **メタデータ**: 各ページに適切なタイトル、説明、キーワードを設定
 - **OGP対応**: Open Graph Protocol対応でSNSシェア最適化
-- **Twitter Card**: Twitter での表示最適化
+- **Twitter Card**: Twitterでの表示最適化
 - **構造化データ**: JSON-LD形式でサイト情報を構造化
 - **サイトマップ**: 自動生成でクローラビリティ向上
 - **HTML圧縮**: ページ読み込み速度の最適化
