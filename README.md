@@ -29,6 +29,15 @@ PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実�
 - **[GPTをゼロから構築する完全ガイド](docs/LLM/05_Let's_build_GPT_from_scratch.md)** - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
 - **[Hugging Face Datasetsライブラリの完全ガイド](docs/LLM/06_the_huggingface_datasets_library.md)** - データセットの読み込み、前処理、保存、FAISSを使った意味検索システムの構築まで実践的に解説
 
+#### Classical NLP Tasks
+
+- **[Token Classification](docs/LLM/ClassicalNLP/71_token_classification.md)** - Transformersを使ったトークン分類：固有表現認識（NER）の実践ガイド
+- **[Masked Language Modeling](docs/LLM/ClassicalNLP/72_masked_language_modeling.md)** - BERTライクなモデルのマスク言語モデルのファインチューニング
+- **[Summarization](docs/LLM/ClassicalNLP/73_summarization.md)** - Transformersを使ったテキスト要約タスクの実装
+- **[Translation](docs/LLM/ClassicalNLP/74_translation.md)** - ニューラル機械翻訳モデルの構築と評価
+- **[Causal Language Modeling](docs/LLM/ClassicalNLP/75_causal_language_modeling.md)** - GPTライクなモデルの訓練とテキスト生成
+- **[Question Answering](docs/LLM/ClassicalNLP/76_question_answering.md)** - 抽出型質問応答システムの実装
+
 ## 🛠️ 技術スタック
 
 - **ドキュメント生成**: [MkDocs](https://www.mkdocs.org/)

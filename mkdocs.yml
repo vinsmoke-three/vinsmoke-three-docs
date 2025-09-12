@@ -20,14 +20,14 @@ theme:
     # - content.tabs.link
     # - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     # - navigation.footer
     - navigation.indexes
     # - navigation.instant
     # - navigation.instant.prefetch
     # - navigation.instant.progress
     # - navigation.prune
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
@@ -177,3 +177,10 @@ nav:
     - 4. Tokenizers library: LLM/04_the_huggingface_tokenizers_library.md
     - 5. Let't build GPT from scratch: LLM/05_Let's_build_GPT_from_scratch.md
     - 6. Datasets library: LLM/06_the_huggingface_datasets_library.md
+    - 7. Classical NLP Tasks:
+      -  Token Classification: LLM/ClassicalNLP/71_token_classification.md
+      -  Masked Language Modeling: LLM/ClassicalNLP/72_masked_language_modeling.md
+      -  Summarization: LLM/ClassicalNLP/73_summarization.md
+      -  Translation: LLM/ClassicalNLP/74_translation.md
+      -  Causal Language Modeling: LLM/ClassicalNLP/75_causal_language_modeling.md
+      -  Question Answering: LLM/ClassicalNLP/76_question_answering.md

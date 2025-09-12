@@ -68,4 +68,12 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 6. [GPTをゼロから構築する完全ガイド](LLM/05_Let's_build_GPT_from_scratch.md) - PyTorchでGPTモデルを一から実装。Self-Attention、位置エンコーディング、重み初期化、テキスト生成アルゴリズムまで詳細解説
 7. [Hugging Face Datasetsライブラリの完全ガイド](LLM/06_the_huggingface_datasets_library.md) - データセットの読み込み、前処理、保存、FAISSを使った意味検索システムの構築まで実践的に解説
 
+#### Classical NLP Tasks
+8. [Token Classification](LLM/ClassicalNLP/71_token_classification.md) - Transformersを使ったトークン分類：固有表現認識（NER）の実践ガイド
+9. [Masked Language Modeling](LLM/ClassicalNLP/72_masked_language_modeling.md) - BERTライクなモデルのマスク言語モデルのファインチューニング
+10. [Summarization](LLM/ClassicalNLP/73_summarization.md) - Transformersを使ったテキスト要約タスクの実装
+11. [Translation](LLM/ClassicalNLP/74_translation.md) - ニューラル機械翻訳モデルの構築と評価
+12. [Causal Language Modeling](LLM/ClassicalNLP/75_causal_language_modeling.md) - GPTライクなモデルの訓練とテキスト生成
+13. [Question Answering](LLM/ClassicalNLP/76_question_answering.md) - 抽出型質問応答システムの実装
+
 ---
