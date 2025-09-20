@@ -11,12 +11,8 @@ tags: ["自然言語処理", "機械学習", "BERT", "固有表現認識", "Hugg
 
 この記事では、トークン分類（Token Classification）について詳しく解説します。特に固有表現認識（Named Entity Recognition, NER）に焦点を当て、HuggingFaceのTransformersライブラリを使ってBERTモデルをファインチューニングする方法を実践的に学習します。
 
-### 学習目標
-
-- トークン分類タスクの理解
-- CoNLL-2003データセットの処理方法
-- BERTモデルのファインチューニング手法
-- カスタム訓練ループの実装
+!!! info "参考資料"
+    本ドキュメントは [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter7/2) を参考に、日本語で学習内容をまとめた個人的な学習ノートです。詳細な内容や最新情報については、原文も併せてご参照ください。
 
 ## 前提知識
 
