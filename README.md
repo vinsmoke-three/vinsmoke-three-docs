@@ -33,8 +33,8 @@ PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実�
 
 - **[Token Classification](docs/LLM/ClassicalNLP/71_token_classification.md)** - Transformersを使ったトークン分類：固有表現認識（NER）の実践ガイド
 - **[Masked Language Modeling](docs/LLM/ClassicalNLP/72_masked_language_modeling.md)** - BERTライクなモデルのマスク言語モデルのファインチューニング
-- **[Summarization](docs/LLM/ClassicalNLP/73_summarization.md)** - Transformersを使ったテキスト要約タスクの実装
-- **[Translation](docs/LLM/ClassicalNLP/74_translation.md)** - ニューラル機械翻訳モデルの構築と評価
+- **[Summarization](docs/LLM/ClassicalNLP/74_summarization.md)** - Transformersを使ったテキスト要約タスクの実装
+- **[Translation](docs/LLM/ClassicalNLP/73_translation.md)** - ニューラル機械翻訳モデルの構築と評価
 - **[Causal Language Modeling](docs/LLM/ClassicalNLP/75_causal_language_modeling.md)** - GPTライクなモデルの訓練とテキスト生成
 - **[Question Answering](docs/LLM/ClassicalNLP/76_question_answering.md)** - 抽出型質問応答システムの実装
 

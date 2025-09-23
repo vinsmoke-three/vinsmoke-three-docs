@@ -180,7 +180,7 @@ nav:
     - 7. Classical NLP Tasks:
       -  Token Classification: LLM/ClassicalNLP/71_token_classification.md
       -  Masked Language Modeling: LLM/ClassicalNLP/72_masked_language_modeling.md
-      -  Summarization: LLM/ClassicalNLP/73_summarization.md
-      -  Translation: LLM/ClassicalNLP/74_translation.md
+      -  Translation: LLM/ClassicalNLP/73_translation.md
+      -  Summarization: LLM/ClassicalNLP/74_summarization.md
       -  Causal Language Modeling: LLM/ClassicalNLP/75_causal_language_modeling.md
       -  Question Answering: LLM/ClassicalNLP/76_question_answering.md
