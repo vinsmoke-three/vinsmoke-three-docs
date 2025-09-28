@@ -73,7 +73,6 @@ description: "PyTorchを使った機械学習・深層学習の実践的なチ�
 9. [Masked Language Modeling](LLM/ClassicalNLP/72_masked_language_modeling.md) - BERTライクなモデルのマスク言語モデルのファインチューニング
 10. [Summarization](LLM/ClassicalNLP/74_summarization.md) - Transformersを使ったテキスト要約タスクの実装
 11. [Translation](LLM/ClassicalNLP/73_translation.md) - ニューラル機械翻訳モデルの構築と評価
-12. [Causal Language Modeling](LLM/ClassicalNLP/75_causal_language_modeling.md) - GPTライクなモデルの訓練とテキスト生成
-13. [Question Answering](LLM/ClassicalNLP/76_question_answering.md) - 抽出型質問応答システムの実装
+12. [Question Answering](LLM/ClassicalNLP/75_question_answering.md) - BERTモデルをSQuADデータセットでファインチューニングして、高精度な質問応答システムを構築する方法を詳細に解説
 
 ---
