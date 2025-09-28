@@ -1,0 +1,238 @@
+/* CSS変数定義 */
+:root {
+  /* ダークテーマ */
+  --code-bg-dark: #1e1e1e;
+  --code-text-dark: #d4d4d4;
+  --comment-dark: #6a9955;
+  --string-dark: #ce9178;
+  --keyword-dark: #569cd6;
+  --number-dark: #b5cea8;
+  --function-dark: #dcdcaa;
+  --class-dark: #4ec9b0;
+  --variable-dark: #9cdcfe;
+  
+  /* ライトテーマ */
+  --code-bg-light: #f8f8f8;
+  --code-text-light: #24292e;
+  --comment-light: #008000;
+  --string-light: #a31515;
+  --keyword-light: #0000ff;
+  --number-light: #098658;
+  --function-light: #795e26;
+  --class-light: #267f99;
+  --variable-light: #000000;
+}
+
+/* コードブロック基本スタイル */
+.highlight {
+  background-color: var(--code-bg-dark) !important;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.highlight pre {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 16px;
+  color: var(--code-text-dark);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* ライトテーマ */
+[data-md-color-scheme="default"] .highlight {
+  background-color: var(--code-bg-light) !important;
+}
+
+[data-md-color-scheme="default"] .highlight pre {
+  color: var(--code-text-light);
+}
+
+/* シンタックスハイライト - ダークテーマ */
+/* コメント */
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cp, .highlight .cs, .highlight .ch { 
+  color: var(--comment-dark) !important; 
+}
+
+/* 文字列 */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, 
+.highlight .sh, .highlight .si, .highlight .sx, .highlight .ss { 
+  color: var(--string-dark) !important; 
+}
+
+/* キーワード */
+.highlight .k, .highlight .kn, .highlight .kd, .highlight .no, .highlight .nt, .highlight .ow { 
+  color: var(--keyword-dark); 
+}
+
+/* 数値 */
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { 
+  color: var(--number-dark); 
+}
+
+/* 関数・メソッド */
+.highlight .nb, .highlight .nd, .highlight .nf, .highlight .bp, .highlight .fm { 
+  color: var(--function-dark); 
+}
+
+/* クラス・型 */
+.highlight .nc, .highlight .nn { 
+  color: var(--class-dark); 
+}
+
+/* 変数 */
+.highlight .n, .highlight .na, .highlight .nv, .highlight .nx, .highlight .py, 
+.highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm { 
+  color: var(--variable-dark); 
+}
+
+/* その他 */
+.highlight .o, .highlight .nl { color: var(--code-text-dark); }
+.highlight .ne, .highlight .ni { color: #f44747; }
+.highlight .sd { color: #608b4e; }
+.highlight .se { color: #d7ba7d; }
+.highlight .sr { color: #d16969; }
+
+/* ライトテーマ オーバーライド */
+[data-md-color-scheme="default"] .highlight .c, 
+[data-md-color-scheme="default"] .highlight .c1, 
+[data-md-color-scheme="default"] .highlight .cm, 
+[data-md-color-scheme="default"] .highlight .cp, 
+[data-md-color-scheme="default"] .highlight .cs, 
+[data-md-color-scheme="default"] .highlight .ch { 
+  color: var(--comment-light) !important; 
+}
+
+[data-md-color-scheme="default"] .highlight .s, 
+[data-md-color-scheme="default"] .highlight .s1, 
+[data-md-color-scheme="default"] .highlight .s2, 
+[data-md-color-scheme="default"] .highlight .sb, 
+[data-md-color-scheme="default"] .highlight .sc, 
+[data-md-color-scheme="default"] .highlight .sh, 
+[data-md-color-scheme="default"] .highlight .si, 
+[data-md-color-scheme="default"] .highlight .sx, 
+[data-md-color-scheme="default"] .highlight .ss { 
+  color: var(--string-light) !important; 
+}
+
+[data-md-color-scheme="default"] .highlight .k, 
+[data-md-color-scheme="default"] .highlight .kn, 
+[data-md-color-scheme="default"] .highlight .kd, 
+[data-md-color-scheme="default"] .highlight .no, 
+[data-md-color-scheme="default"] .highlight .nt, 
+[data-md-color-scheme="default"] .highlight .ow { 
+  color: var(--keyword-light); 
+}
+
+[data-md-color-scheme="default"] .highlight .m, 
+[data-md-color-scheme="default"] .highlight .mb, 
+[data-md-color-scheme="default"] .highlight .mf, 
+[data-md-color-scheme="default"] .highlight .mh, 
+[data-md-color-scheme="default"] .highlight .mi, 
+[data-md-color-scheme="default"] .highlight .mo, 
+[data-md-color-scheme="default"] .highlight .il { 
+  color: var(--number-light); 
+}
+
+[data-md-color-scheme="default"] .highlight .nb, 
+[data-md-color-scheme="default"] .highlight .nd, 
+[data-md-color-scheme="default"] .highlight .nf, 
+[data-md-color-scheme="default"] .highlight .bp, 
+[data-md-color-scheme="default"] .highlight .fm { 
+  color: var(--function-light); 
+}
+
+[data-md-color-scheme="default"] .highlight .nc, 
+[data-md-color-scheme="default"] .highlight .nn { 
+  color: var(--class-light); 
+}
+
+[data-md-color-scheme="default"] .highlight .n, 
+[data-md-color-scheme="default"] .highlight .na, 
+[data-md-color-scheme="default"] .highlight .nv, 
+[data-md-color-scheme="default"] .highlight .nx, 
+[data-md-color-scheme="default"] .highlight .py, 
+[data-md-color-scheme="default"] .highlight .vc, 
+[data-md-color-scheme="default"] .highlight .vg, 
+[data-md-color-scheme="default"] .highlight .vi, 
+[data-md-color-scheme="default"] .highlight .vm { 
+  color: var(--variable-light); 
+}
+
+[data-md-color-scheme="default"] .highlight .o, 
+[data-md-color-scheme="default"] .highlight .nl { 
+  color: var(--code-text-light); 
+}
+
+[data-md-color-scheme="default"] .highlight .ne, 
+[data-md-color-scheme="default"] .highlight .ni { 
+  color: #cd3131; 
+}
+
+[data-md-color-scheme="default"] .highlight .sd { color: #008000; }
+[data-md-color-scheme="default"] .highlight .se { color: #ff8000; }
+[data-md-color-scheme="default"] .highlight .sr { color: #8b0000; }
+
+/* 行番号 */
+.highlight .linenos {
+  color: #858585;
+  background-color: transparent;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+  border-right: 1px solid #3e3e3e;
+  user-select: none;
+}
+
+[data-md-color-scheme="default"] .highlight .linenos {
+  color: #237893;
+  border-right: 1px solid #e1e4e8;
+}
+
+/* スクロールバー */
+.highlight::-webkit-scrollbar {
+  height: 8px;
+}
+
+.highlight::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+
+.highlight::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+}
+
+.highlight::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+[data-md-color-scheme="default"] .highlight::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}
+
+[data-md-color-scheme="default"] .highlight::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+
+[data-md-color-scheme="default"] .highlight::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* インラインコード */
+code:not(.highlight code) {
+  background-color: rgba(27, 31, 35, 0.05) !important;
+  color: var(--code-text-light) !important;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+[data-md-color-scheme="slate"] code:not(.highlight code) {
+  background-color: rgba(110, 118, 129, 0.4) !important;
+  color: var(--code-text-dark) !important;
+}
