@@ -56,6 +56,10 @@ This is a Japanese language documentation site built with MkDocs Material theme,
 - Python packages listed in `requirements.txt` (PyTorch, numpy, matplotlib, scikit-learn, etc.)
 - MkDocs plugins: mkdocs-material, mkdocs-minify-plugin, mkdocs-git-revision-date-localized-plugin
 
+## Auto Skills
+
+- When a new markdown file is created or added under `docs/`, always run the `/update-docs` skill to update related files (mkdocs.yml, index.md, README.md)
+
 ## Notes
 
 - `CLAUDE.md` and `.gitignore` are excluded from git tracking (via `.gitignore`)

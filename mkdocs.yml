@@ -183,3 +183,6 @@ nav:
       -  Translation: LLM/ClassicalNLP/73_translation.md
       -  Summarization: LLM/ClassicalNLP/74_summarization.md
       -  Question Answering: LLM/ClassicalNLP/75_question_answering.md
+  - Tools:
+    - Claude Code:
+      - Commands: Tools/ClaudeCode/claude_code_commands.md
