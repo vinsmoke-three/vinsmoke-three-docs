@@ -186,3 +186,4 @@ nav:
   - Tools:
     - Claude Code:
       - Commands: Tools/ClaudeCode/claude_code_commands.md
+      - Hooks: Tools/ClaudeCode/claude_code_hooks.md
