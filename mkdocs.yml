@@ -153,6 +153,18 @@ extra:
     BERT: bert
     GPT: gpt
     大規模言語モデル: large-language-model
+    Superpowers: superpowers
+    Skills: skills
+    AI Agent: ai-agent
+    Subagent: subagent
+    Hooks: hooks
+    SessionStart: session-start
+    説得心理学: persuasion-psychology
+    TDD: tdd
+    テスト: test
+    コードレビュー: code-review
+    自動化: automation
+    セキュリティ: security
   
 # Page tree
 nav:
@@ -187,3 +199,9 @@ nav:
     - Claude Code:
       - Commands: Tools/ClaudeCode/claude_code_commands.md
       - Hooks: Tools/ClaudeCode/claude_code_hooks.md
+    - Superpowers:
+      - Overview: Tools/Superpowers/superpowers_overview.md
+      - SessionStart Hook: Tools/Superpowers/superpowers_session_start.md
+      - Skill design: Tools/Superpowers/superpowers_skill_design.md
+      - Subagent architecture: Tools/Superpowers/superpowers_subagent.md
+      - Skill TDD: Tools/Superpowers/superpowers_skill_tdd.md
