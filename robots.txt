@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vinsmoke-three.github.io/vinsmoke-three-docs/sitemap.xml
