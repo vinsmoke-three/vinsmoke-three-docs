@@ -2,7 +2,7 @@
 
 PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実践的なチュートリアルとコード例を日本語で提供するドキュメントサイトです。
 
-🌐 **サイトURL**: https://vinsmoke-three.com
+🌐 **サイトURL**: https://vinsmoke-three.github.io/vinsmoke-three-docs/
 
 ## 📚 コンテンツ
 

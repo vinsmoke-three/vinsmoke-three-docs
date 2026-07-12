@@ -564,7 +564,7 @@ def predict(img) -> Tuple[Dict, float]:
 # タイトル、説明、記事の文字列を作成
 title = "FoodVision Big"
 description = "101種類の食品画像を分類するEfficientNetB2特徴抽出コンピュータービジョンモデル。"
-article = "[10. PyTorchモデルデプロイメント](https://vinsmoke-three.com/PyTorch/10_pytorch_model_deployment/)で作成。"
+article = "[10. PyTorchモデルデプロイメント](https://vinsmoke-three.github.io/vinsmoke-three-docs/PyTorch/10_pytorch_model_deployment/)で作成。"
 
 # "examples/"ディレクトリから例のリストを作成
 example_list = [["examples/" + example] for example in os.listdir("examples")]

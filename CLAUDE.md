@@ -36,7 +36,7 @@ This is a Japanese language documentation site built with MkDocs Material theme,
 
 ## Site Configuration
 
-- Site URL: https://vinsmoke-three.com
+- Site URL: https://vinsmoke-three.github.io/vinsmoke-three-docs/
 - Theme: Material with dark/light mode toggle
 - Navigation includes tabs and sections
 - Code highlighting enabled with syntax highlighting

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "vinsmoke-three",
-    "url": "https://vinsmoke-three.com",
+    "url": "https://vinsmoke-three.github.io/vinsmoke-three-docs",
     "description": "PyTorchを使った機械学習・深層学習の実践的なチュートリアル",
     "inLanguage": "ja",
     "author": {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://vinsmoke-three.com/search?q={search_term_string}",
+      "target": "https://vinsmoke-three.github.io/vinsmoke-three-docs/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "vinsmoke-three",
-    "url": "https://vinsmoke-three.com",
+    "url": "https://vinsmoke-three.github.io/vinsmoke-three-docs",
     "description": "機械学習・深層学習の教育リソースを提供",
     "educationalCredentialAwarded": "実践的な機械学習スキル",
     "hasCredential": {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "publisher": {
         "@type": "Organization",
         "name": "vinsmoke-three",
-        "url": "https://vinsmoke-three.com"
+        "url": "https://vinsmoke-three.github.io/vinsmoke-three-docs"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",

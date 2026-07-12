@@ -1,5 +1,5 @@
 site_name: vinsmoke-three - 機械学習・深層学習ドキュメント
-site_url: https://vinsmoke-three.com
+site_url: https://vinsmoke-three.github.io/vinsmoke-three-docs/
 site_description: PyTorch、機械学習、深層学習、大規模言語モデル（LLM）の実践的なチュートリアルとコード例を日本語で提供する技術ドキュメントサイト。初心者から上級者まで段階的に学習できます。
 site_author: vinsmoke-three
 # repo_url: https://github.com/vinsmoke-three/vinsmoke-three-docs
